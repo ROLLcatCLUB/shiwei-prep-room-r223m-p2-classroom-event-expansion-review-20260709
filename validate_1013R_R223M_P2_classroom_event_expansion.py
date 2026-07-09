@@ -124,6 +124,7 @@ def validate(root: Path) -> dict:
 
     for phrase in MAIN_TEXT_REQUIRED:
         add_check(checks, f"main_md_has_classroom_depth::{phrase}", phrase in main_md)
+    add_check(checks, "main_md_has_7_section_purpose_notes", main_md.count("【环节说明】") == 7)
 
     for phrase in ["学生常见反应", "学生可能偏差", "教师应对", "证据采集"]:
         add_check(checks, f"student_matrix_has::{phrase}", phrase in student_matrix)
@@ -138,6 +139,8 @@ def validate(root: Path) -> dict:
     add_check(checks, "html_formal_ui_false", 'data-formal-ui="false"' in main_html)
     add_check(checks, "html_card_wall_false", 'data-card-wall="false"' in main_html)
     add_check(checks, "html_classroom_event_expansion_true", 'data-classroom-event-expansion="true"' in main_html)
+    add_check(checks, "html_has_7_section_purpose_notes", main_html.count('class="section-purpose"') == 7)
+    add_check(checks, "html_no_mojibake_question_marks", "???" not in main_html and "????" not in main_html)
     for forbidden_class in ["component-card", "chain-node", "decision-card"]:
         add_check(checks, f"html_no_card_wall_class::{forbidden_class}", forbidden_class not in main_html)
     add_check(checks, "html_no_card_wall_class_attr", 'class="card-wall"' not in main_html)
