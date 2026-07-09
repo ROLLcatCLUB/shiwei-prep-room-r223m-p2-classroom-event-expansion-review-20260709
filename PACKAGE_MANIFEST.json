@@ -84,8 +84,8 @@
     },
     {
       "path": "validate_1013R_R223M_P2_classroom_event_expansion_result.json",
-      "size": 358,
-      "sha256": "C3E5278B0967F00A9AB72759F7238990C8D3FD643EB89111492B392EE9018799"
+      "size": 178,
+      "sha256": "48709BAB7F2A242E7354C0C1EE71CD8C5D323D1EA9907DCA127837B5D9C8144D"
     }
   ],
   "main_entry": "R223M_P2_teacher_readable_process_v3.html",
