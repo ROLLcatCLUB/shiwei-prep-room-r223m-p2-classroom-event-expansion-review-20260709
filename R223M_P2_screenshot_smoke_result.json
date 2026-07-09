@@ -21,15 +21,18 @@
     "projection": true,
     "remediation": true,
     "rememberBrush": true,
+    "sectionPurpose": true,
     "studentPossibility": true,
     "teacherFollow": true,
     "transition": true,
     "why": true
   },
   "horizontalOverflow": false,
-  "paragraphCount": 26,
+  "paragraphCount": 33,
+  "questionMarkInChromeText": false,
   "scrollWidth": 547,
+  "sectionPurposeCount": 7,
   "stage": "1013R_R223M_P2_CLASSROOM_EVENT_EXPANSION_AND_STUDENT_RESPONSE_PREDICTION",
-  "title": "R223M-P2 ??????? v3",
+  "title": "《我为文具代言》课堂过程展开稿 v3",
   "url": "http://127.0.0.1:8900/R223M_P2_teacher_readable_process_v3.html"
 }
